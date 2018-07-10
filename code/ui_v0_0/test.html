@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Well Detection Software</h2>
+    <p>Enter the village name:</p>
+    <input id="numb">
+    <button type="button" onclick="initMap()">Submit</button>
+    <p id="demo"></p>
+    <script>
+      function initMap() {
+        var x, text;
+        x = document.getElementById("numb").value;
+        document.getElementById("demo").innerHTML = "Village Name: " + x;
+        window.open ('mapPage1.html','_self',false)
+      }
+
+    </script>
+  </body>
+</html>

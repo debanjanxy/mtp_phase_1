@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<!-- <head>
+    <title>Well Detection</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head> -->
+<body>
+
+
+
+<!-- <h2>Well Detection Software</h2>
+
+<p>Enter the village name:</p>
+
+<input id="numb"> -->
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<!-- <p id="demo"></p> -->
+
+<!-- <button type="button" onclick="initMap()">map</button> -->
+<div id="map"></div>
+
+<script>
+function myFunction() {
+    var x, text, map;
+    // x = document.getElementById("numb").value;
+    // document.getElementById("demo").innerHTML = "Village name: " + x;
+    map = new google.maps.Map(document.getElementById('map'),{
+	    	center: {lat: -19.292, lng: 76.436},
+	    	zoom: 12
+		});
+}
+</script>
+<!-- 
+<script>
+	var map;
+	function initMap(){
+	    
+	 }
+</script>
+ -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3DFGPKThvZXnt6DXvMAn0MCpxYwjAvLE&callback=initMap" async defer></script>
+
+</body>
+</html> 
