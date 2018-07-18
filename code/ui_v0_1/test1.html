@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test 1</title>
+    <script src="http:www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas" width="512" height="256" style="border:1px solid #000000;"></canvas>
+    <br />
+    <br />
+    <!-- <input type="text" id="finput" />
+    <input type="button" value="Upload" onclick="upload()" /> -->
+    <input type="file" multiple="false" accept="image/*" id="fileinput" onchange="upload_image()" />
+
+    <script>
+        function upload(){
+            var fileinput = document.getElementById("finput");
+            var filename = fileinput.value;
+            alert("Choose "+filename);
+        }
+        function upload_image(){
+            var imgcanvas = document.getElementById('canvas');
+            var fileinput = document.getElementById('fileinput');
+            var image = new SimpleImage(fileinput);
+            image.drawTo(imgcanvas);
+            console.log(image);
+        }
+    </script>
+</body>
+
+</html>

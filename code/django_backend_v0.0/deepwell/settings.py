@@ -55,7 +55,9 @@ ROOT_URLCONF = 'deepwell.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR+r'/templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

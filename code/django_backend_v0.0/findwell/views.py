@@ -1,7 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import loader
 
 def index(request):
-   return HttpResponse("Hello there! You are looking for wells?")
+    templates = loader.get_template('findwell/index.html')
+    return render(request, 'findwell/index.html')
+    # return HttpResponse(templates.render(request,'findwell/index.html'))
 
 # Create your views here.
